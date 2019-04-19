@@ -2358,7 +2358,7 @@ function (_Document) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement("link", {
-        href: "https://fonts.googleapis.com/css?family=Lato:300,400",
+        href: "https://fonts.googleapis.com/css?family=Lato:300,400,700",
         rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,

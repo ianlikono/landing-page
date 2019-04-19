@@ -74,7 +74,7 @@ class MyDocument extends Document {
             }
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Lato:300,400"
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
             rel="stylesheet"
           />
         </Head>
