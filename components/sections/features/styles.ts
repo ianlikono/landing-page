@@ -10,8 +10,8 @@ export const Wrapper = styled.div`
 export const FeaturesHeader = styled.h3`
   font-size: 3.8rem;
   line-height: 5.3rem;
-  color: ${props => props.theme.colorTextDark};
-  font-family: ${props => props.theme.fontFamilyPrimary};
+  color: #333;
+  font-family: Lato;
   font-weight: 300;
   display: flex;
 `;
@@ -31,8 +31,8 @@ export const FeatureItem = styled.div`
   max-width: 35rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: ${props => props.theme.colorTextPrimary};
-  box-shadow: ${props => props.theme.BoxShadow};
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
   margin-top: 5rem;
 `;
 
@@ -41,16 +41,16 @@ export const FeatureHeader = styled.div`
   font-weight: 300;
   font-size: 2rem;
   line-height: 2.8rem;
-  color: ${props => props.theme.colorTextDarkFaded};
-  font-family: ${props => props.theme.fontFamilyPrimary};
+  color: $rgb(165, 165, 194);
+  font-family: Lato;
   text-align: center;
 `;
 
 export const FeatureBody = styled.div`
   font-size: 1.5rem;
   line-height: 2.4rem;
-  color: ${props => props.theme.colorTextDark};
-  font-family: ${props => props.theme.fontFamilyPrimary};
+  color: #333;
+  font-family: Lato;
   font-weight: 300;
   text-align: center;
 `;

@@ -34,8 +34,8 @@ export const Logo = styled.div`
 export const HeaderH1 = styled.div`
   font-size: 5.3rem;
   line-height: 6.9rem;
-  color: ${props => props.theme.colorTextPrimary};
-  font-family: ${props => props.theme.fontFamilyPrimary};
+  color: rgb(255, 255, 255);
+  font-family: Lato;
   font-weight: 300;
   height: auto;
   text-align: center;
@@ -44,8 +44,8 @@ export const HeaderH1 = styled.div`
 export const SecondaryText = styled.div`
   font-size: 2rem;
   line-height: 2.8rem;
-  color: ${props => props.theme.colorTextPrimary};
-  font-family: ${props => props.theme.fontFamilyPrimary};
+  color: rgb(255, 255, 255);
+  font-family: Lato;
   font-weight: 400;
   width: 37rem;
   height: auto;
@@ -61,7 +61,7 @@ export const ButtonText = styled.div`
   background-color: inherit;
   color: inherit;
   font-size: 1.8rem;
-  font-family: ${props => props.theme.fontFamilyPrimary};
+  font-family: Lato;
   font-weight: 700;
 `;
 
@@ -72,8 +72,8 @@ export const FormWrapper = styled.div`
   padding: 0;
   border: none;
   border-radius: 0.5rem;
-  background-color: ${props => props.theme.colorTextPrimary};
-  box-shadow: ${props => props.theme.BoxShadow};
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,8 +83,8 @@ export const FormWrapper = styled.div`
 export const FormHeader = styled.div`
   font-size: 2rem;
   line-height: 2.8rem;
-  color: ${props => props.theme.colorTextDarkFaded};
-  font-family: ${props => props.theme.fontFamilyPrimary};
+  color: rgb(165, 165, 194);
+  font-family: Lato;
   font-weight: 400;
   width: 100%;
   height: auto;
@@ -96,8 +96,8 @@ export const FormHeaderParagraph = styled.p`
 
 export const FormInput = styled.input`
   font-size: 2rem;
-  font-family: ${props => props.theme.fontFamilyPrimary};
-  color: ${props => props.theme.colorTextDark};
+  font-family: Lato;
+  color: #333;
   border-radius: 0.5rem;
   border: none;
   position: relative;
