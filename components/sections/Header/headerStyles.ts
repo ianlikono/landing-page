@@ -12,12 +12,11 @@ export const Sections = styled.div`
 
 export const MainWrapper = styled.section`
   margin-top: -20px;
-  background: url(${headerBg}) no-repeat;
-  background-size: cover;
   width: 100%;
-  height: 110vh;
   display: flex;
   justify-content: center;
+  background: url(${headerBg}) no-repeat;
+  background-size: cover;
 `;
 
 export const Wrapper = styled.div`
@@ -113,6 +112,7 @@ export const FormInput = styled.input`
   width: 80%;
   &:active {
     border: none;
+    outline: none !important;
   }
   &:focus {
     border: none;
