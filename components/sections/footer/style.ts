@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const MainWrapper = styled.div`
-    margin-top: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(90deg, rgba(0,183,18,1) 0%, rgba(90,255,21,1) 35%);
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 183, 18, 1) 0%,
+    rgba(90, 255, 21, 1) 35%
+  );
   height: auto;
   width: 100%;
 `;
@@ -22,7 +26,6 @@ export const FooterHeader = styled.h3`
 
 export const Wrapper = styled.div`
   margin-top: 4rem;
-  color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,6 +76,7 @@ export const FormInput = styled.input`
   touch-action: manipulation;
   background-color: #fff;
   background-image: none;
+  outline: ${props => (props.error ? "0.5px solid red" : "none")};
   width: 80%;
   &:active {
     border: none;
@@ -93,8 +97,13 @@ export const ButtonText = styled.div`
 `;
 
 export const CopyRight = styled.p`
-    line-height: 2.8rem;
-    font-size: 2rem;
-    color: #fff;
-    font-family: ${props => props.theme.fontFamilyPrimary};
+  line-height: 2.8rem;
+  font-size: 2rem;
+  color: #fff;
+  font-family: ${props => props.theme.fontFamilyPrimary};
+`;
+export const Error = styled.p`
+  color: red;
+  margin-top: 0;
+  font-size: 2rem;
 `;

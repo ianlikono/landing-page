@@ -110,12 +110,13 @@ export const FormInput = styled.input`
   background-color: #fff;
   background-image: none;
   width: 80%;
+  outline: ${props => (props.error ? "0.5px solid red" : "none")};
   &:active {
     border: none;
     outline: none !important;
   }
   &:focus {
-    border: none;
+    border: 0.5px solid rgba(0, 183, 18, 1);
     outline: none !important;
   }
 `;
@@ -126,4 +127,10 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+`;
+
+export const Error = styled.p`
+  color: red;
+  margin-top: 0;
+  font-size: 2rem;
 `;
