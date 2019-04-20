@@ -5,6 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
+    "postexport": "node scripts/postExport.js",
     "type-check": "tsc"
   },
   "dependencies": {
@@ -25,6 +27,7 @@
     "react": "^16.8.6",
     "react-apollo": "^2.5.4",
     "react-dom": "^16.8.6",
+    "react-ga": "^2.5.7",
     "react-icons": "3.5.0",
     "react-jss": "^8.6.1",
     "react-spring": "^8.0.19",

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -170,10 +170,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/DialogTitle */ "@material-ui/core/DialogTitle");
 /* harmony import */ var _material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-icons */ "react-icons");
-/* harmony import */ var react_icons__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_icons__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-icons/fa */ "react-icons/fa");
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_icons_CheckCircle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/CheckCircle */ "@material-ui/icons/CheckCircle");
+/* harmony import */ var _material_ui_icons_CheckCircle__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CheckCircle__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__);
 var _jsxFileName = "/Users/likono/likono/landing-page/components/sections/Dialog/Dialog.tsx";
 
 
@@ -185,9 +185,20 @@ var _jsxFileName = "/Users/likono/likono/landing-page/components/sections/Dialog
 
 
 
+var styles = function styles(theme) {
+  return {
+    checkIcon: {
+      width: "100%",
+      color: "#4caf50",
+      fontSize: "4rem"
+    }
+  };
+};
+
 var Modal = function Modal(props) {
   var open = props.open,
-      close = props.close;
+      close = props.close,
+      classes = props.classes;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_2___default.a, {
     open: open,
     onClose: close,
@@ -195,14 +206,14 @@ var Modal = function Modal(props) {
     "aria-describedby": "success-dialog-description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 29
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_6___default.a, {
     id: "success-dialog-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -211,38 +222,33 @@ var Modal = function Modal(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 36
     },
     __self: this
-  }, "Success! "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons__WEBPACK_IMPORTED_MODULE_7__["IconContext"].Provider, {
-    value: {
-      style: {
-        color: "#4caf50",
-        fontSize: "4rem"
-      }
-    },
+  }, "Success! "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classes.checkIcon,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 37
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__["FaCheckCircle"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CheckCircle__WEBPACK_IMPORTED_MODULE_7___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 38
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 41
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_5___default.a, {
     id: "success-dialog-description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 42
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -251,13 +257,13 @@ var Modal = function Modal(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 43
     },
     __self: this
   }, "Thank you for signing up. We promise we wo't let you down! We will notify you as soon as we are live, in the meantime start preparing for the coming good online business life."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -265,13 +271,13 @@ var Modal = function Modal(props) {
     color: "primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 51
     },
     __self: this
   }, "Close"))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Modal);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["withStyles"])(styles)(Modal));
 
 /***/ }),
 
@@ -781,13 +787,17 @@ var Error = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.withConfi
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons */ "react-icons");
-/* harmony import */ var react_icons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_icons__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ "react-icons/fa");
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_icons_io__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-icons/io */ "react-icons/io");
-/* harmony import */ var react_icons_io__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_icons_io__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles */ "./components/sections/features/styles.ts");
+/* harmony import */ var _material_ui_icons_NaturePeople__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/icons/NaturePeople */ "@material-ui/icons/NaturePeople");
+/* harmony import */ var _material_ui_icons_NaturePeople__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_NaturePeople__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_icons_More__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/icons/More */ "@material-ui/icons/More");
+/* harmony import */ var _material_ui_icons_More__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_More__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Edit */ "@material-ui/icons/Edit");
+/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_People__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/People */ "@material-ui/icons/People");
+/* harmony import */ var _material_ui_icons_People__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_People__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles */ "./components/sections/features/styles.ts");
 var _jsxFileName = "/Users/likono/likono/landing-page/components/sections/features/Features.tsx";
 
 
@@ -795,173 +805,179 @@ var _jsxFileName = "/Users/likono/likono/landing-page/components/sections/featur
 
 
 
-var FeaturesSection = function FeaturesSection() {
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["Wrapper"], {
+
+
+var styles = function styles(theme) {
+  return {
+    checkIcon: {
+      width: "100%",
+      color: "#4caf50",
+      fontSize: "8rem",
+      textAlign: "center"
+    }
+  };
+};
+
+var FeaturesSection = function FeaturesSection(props) {
+  var classes = props.classes;
+  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["Wrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 28
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeaturesHeader"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeaturesHeader"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 29
     },
     __self: this
-  }, "Features"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureList"], {
+  }, "Features"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureList"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 30
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureItem"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureItem"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 31
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureHeader"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "Developed By Experts"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons__WEBPACK_IMPORTED_MODULE_1__["IconContext"].Provider, {
-    value: {
-      style: {
-        color: "#4caf50",
-        fontSize: "50px"
-      }
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaBuromobelexperte"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureBody"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, "Developed by people with alot of ecommerce experience and was tailored to solve most of the current common problems and problems that may occur in future.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureItem"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureHeader"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureHeader"], {
+  }, "Developed By Experts"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: classes.checkIcon,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, "Made For You Owned By You"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons__WEBPACK_IMPORTED_MODULE_1__["IconContext"].Provider, {
-    value: {
-      style: {
-        color: "#4caf50",
-        fontSize: "50px"
-      }
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_material_ui_icons_NaturePeople__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    style: {
+      fontSize: "6rem"
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons_io__WEBPACK_IMPORTED_MODULE_3__["IoIosPeople"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureBody"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 36
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureBody"], {
+  }, "Developed by people with alot of ecommerce experience and was tailored to solve most of the current common problems and problems that may occur in future.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureItem"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 42
     },
     __self: this
-  }, "Own your store and have it look and feel the way you want. No coding experience, no problem we got you covered. All you need is goods you want to sell and share with the world.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureItem"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureHeader"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, "Made For You Owned By You"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: classes.checkIcon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_material_ui_icons_People__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    style: {
+      fontSize: "6rem"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureHeader"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureBody"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: this
-  }, "Easily Customizable To Meet Your Business Needs"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons__WEBPACK_IMPORTED_MODULE_1__["IconContext"].Provider, {
-    value: {
-      style: {
-        color: "#4caf50",
-        fontSize: "50px"
-      }
-    },
+  }, "Own your store and have it look and feel the way you want. No coding experience, no problem we got you covered. All you need is goods you want to sell and share with the world.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureItem"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 53
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons_fa__WEBPACK_IMPORTED_MODULE_2__["FaEdit"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureBody"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureHeader"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
     },
     __self: this
-  }, "Every business is covered from small businesses to large enterprise companies, no more worrying about time and money when you want to sell online.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureItem"], {
+  }, "Easily Customizable To Meet Your Business Needs"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: classes.checkIcon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    style: {
+      fontSize: "6rem"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureBody"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureHeader"], {
+  }, "Every business is covered from small businesses to large enterprise companies, no more worrying about time and money when you want to sell online.")), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureItem"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 66
     },
     __self: this
-  }, "More Than You Ever Imagined"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons__WEBPACK_IMPORTED_MODULE_1__["IconContext"].Provider, {
-    value: {
-      style: {
-        color: "#4caf50",
-        fontSize: "50px"
-      }
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons_io__WEBPACK_IMPORTED_MODULE_3__["IoIosMore"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_4__["FeatureBody"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureHeader"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
     },
     __self: this
+  }, "More Than You Ever Imagined"), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: classes.checkIcon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_material_ui_icons_More__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    style: {
+      fontSize: "6rem"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_styles__WEBPACK_IMPORTED_MODULE_6__["FeatureBody"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
   }, "From selling virtual products, physical products, exchange marketplace, coupons and all you have been wishing for is finally here!!!"))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (FeaturesSection);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__["withStyles"])(styles)(FeaturesSection));
 
 /***/ }),
 
@@ -1705,15 +1721,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.tsx");
+/* harmony import */ var _utils_analytics__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/analytics */ "./utils/analytics.ts");
 var _jsxFileName = "/Users/likono/likono/landing-page/pages/index.tsx";
 
 
 
+
 var IndexPage = function IndexPage() {
-  return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (!window.GA_INITIALIZED) {
+      Object(_utils_analytics__WEBPACK_IMPORTED_MODULE_2__["initGA"])();
+      window.GA_INITIALIZED = true;
+    }
+
+    Object(_utils_analytics__WEBPACK_IMPORTED_MODULE_2__["logPageView"])();
+  });
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 14
     },
     __self: this
   });
@@ -1745,6 +1771,58 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdUAAAE1CAYAAACx
 
 /***/ }),
 
+/***/ "./utils/analytics.ts":
+/*!****************************!*\
+  !*** ./utils/analytics.ts ***!
+  \****************************/
+/*! exports provided: initGA, logPageView, logEvent, logException */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initGA", function() { return initGA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logPageView", function() { return logPageView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logEvent", function() { return logEvent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logException", function() { return logException; });
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-ga */ "react-ga");
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_ga__WEBPACK_IMPORTED_MODULE_0__);
+
+var initGA = function initGA() {
+  console.log("GA init");
+  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.initialize("UA-138713951-1");
+};
+var logPageView = function logPageView() {
+  console.log("Logging pageview for ${window.location.pathname}");
+  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.set({
+    page: window.location.pathname
+  });
+  react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.pageview(window.location.pathname);
+};
+var logEvent = function logEvent() {
+  var category = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
+
+  if (category && action) {
+    react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.event({
+      category: category,
+      action: action
+    });
+  }
+};
+var logException = function logException() {
+  var description = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  var fatal = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  if (description) {
+    react_ga__WEBPACK_IMPORTED_MODULE_0___default.a.exception({
+      description: description,
+      fatal: fatal
+    });
+  }
+};
+
+/***/ }),
+
 /***/ "./utils/validateEmail.ts":
 /*!********************************!*\
   !*** ./utils/validateEmail.ts ***!
@@ -1763,7 +1841,7 @@ function validateEmail(email) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
@@ -1874,6 +1952,61 @@ module.exports = require("@material-ui/core/useMediaQuery");
 
 /***/ }),
 
+/***/ "@material-ui/icons/CheckCircle":
+/*!*************************************************!*\
+  !*** external "@material-ui/icons/CheckCircle" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/CheckCircle");
+
+/***/ }),
+
+/***/ "@material-ui/icons/Edit":
+/*!******************************************!*\
+  !*** external "@material-ui/icons/Edit" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/Edit");
+
+/***/ }),
+
+/***/ "@material-ui/icons/More":
+/*!******************************************!*\
+  !*** external "@material-ui/icons/More" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/More");
+
+/***/ }),
+
+/***/ "@material-ui/icons/NaturePeople":
+/*!**************************************************!*\
+  !*** external "@material-ui/icons/NaturePeople" ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/NaturePeople");
+
+/***/ }),
+
+/***/ "@material-ui/icons/People":
+/*!********************************************!*\
+  !*** external "@material-ui/icons/People" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/People");
+
+/***/ }),
+
 /***/ "core-js/library/fn/array/is-array":
 /*!****************************************************!*\
   !*** external "core-js/library/fn/array/is-array" ***!
@@ -1962,36 +2095,14 @@ module.exports = require("react-apollo");
 
 /***/ }),
 
-/***/ "react-icons":
-/*!******************************!*\
-  !*** external "react-icons" ***!
-  \******************************/
+/***/ "react-ga":
+/*!***************************!*\
+  !*** external "react-ga" ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("react-icons");
-
-/***/ }),
-
-/***/ "react-icons/fa":
-/*!*********************************!*\
-  !*** external "react-icons/fa" ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-icons/fa");
-
-/***/ }),
-
-/***/ "react-icons/io":
-/*!*********************************!*\
-  !*** external "react-icons/io" ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-icons/io");
+module.exports = require("react-ga");
 
 /***/ }),
 

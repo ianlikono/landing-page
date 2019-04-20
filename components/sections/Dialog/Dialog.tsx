@@ -5,16 +5,25 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import { IconContext } from "react-icons";
-import { FaCheckCircle } from "react-icons/fa";
+import CheckCircle from "@material-ui/icons/CheckCircle";
+import { withStyles } from "@material-ui/core/styles";
+
+const styles = theme => ({
+  checkIcon: {
+    width: "100%",
+    color: "#4caf50",
+    fontSize: "4rem"
+  }
+});
 
 type Props = {
   open: any;
   close: any;
+  classes: any;
 };
 
 const Modal: React.FunctionComponent<Props> = props => {
-  const { open, close } = props;
+  const { open, close, classes } = props;
   return (
     <>
       <Dialog
@@ -25,11 +34,9 @@ const Modal: React.FunctionComponent<Props> = props => {
       >
         <DialogTitle id="success-dialog-title">
           <span style={{ fontSize: "4rem" }}>Success! </span>
-          <IconContext.Provider
-            value={{ style: { color: "#4caf50", fontSize: "4rem" } }}
-          >
-            <FaCheckCircle />
-          </IconContext.Provider>
+          <div className={classes.checkIcon}>
+            <CheckCircle />
+          </div>
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="success-dialog-description">
@@ -50,4 +57,4 @@ const Modal: React.FunctionComponent<Props> = props => {
   );
 };
 
-export default Modal;
+export default withStyles(styles)(Modal);

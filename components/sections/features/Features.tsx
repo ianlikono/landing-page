@@ -1,7 +1,9 @@
 import * as React from "react";
-import { IconContext } from "react-icons";
-import { FaBuromobelexperte, FaEdit } from "react-icons/fa";
-import { IoIosMore, IoIosPeople } from "react-icons/io";
+import NaturePeople from "@material-ui/icons/NaturePeople";
+import More from "@material-ui/icons/More";
+import Edit from "@material-ui/icons/Edit";
+import People from "@material-ui/icons/People";
+import { withStyles } from "@material-ui/core/styles";
 import {
   FeatureBody,
   FeatureHeader,
@@ -11,18 +13,26 @@ import {
   Wrapper
 } from "./styles";
 
-const FeaturesSection: React.FunctionComponent = () => {
+const styles = theme => ({
+  checkIcon: {
+    width: "100%",
+    color: "#4caf50",
+    fontSize: "8rem",
+    textAlign: "center"
+  }
+});
+
+const FeaturesSection: React.FunctionComponent = props => {
+  const { classes } = props;
   return (
     <Wrapper>
       <FeaturesHeader>Features</FeaturesHeader>
       <FeatureList>
         <FeatureItem>
           <FeatureHeader>Developed By Experts</FeatureHeader>
-          <IconContext.Provider
-            value={{ style: { color: "#4caf50", fontSize: "50px" } }}
-          >
-            <FaBuromobelexperte />
-          </IconContext.Provider>
+          <div className={classes.checkIcon}>
+            <NaturePeople style={{ fontSize: "6rem" }} />
+          </div>
           <FeatureBody>
             Developed by people with alot of ecommerce experience and was
             tailored to solve most of the current common problems and problems
@@ -31,11 +41,9 @@ const FeaturesSection: React.FunctionComponent = () => {
         </FeatureItem>
         <FeatureItem>
           <FeatureHeader>Made For You Owned By You</FeatureHeader>
-          <IconContext.Provider
-            value={{ style: { color: "#4caf50", fontSize: "50px" } }}
-          >
-            <IoIosPeople />
-          </IconContext.Provider>
+          <div className={classes.checkIcon}>
+            <People style={{ fontSize: "6rem" }} />
+          </div>
           <FeatureBody>
             Own your store and have it look and feel the way you want. No coding
             experience, no problem we got you covered. All you need is goods you
@@ -46,11 +54,9 @@ const FeaturesSection: React.FunctionComponent = () => {
           <FeatureHeader>
             Easily Customizable To Meet Your Business Needs
           </FeatureHeader>
-          <IconContext.Provider
-            value={{ style: { color: "#4caf50", fontSize: "50px" } }}
-          >
-            <FaEdit />
-          </IconContext.Provider>
+          <div className={classes.checkIcon}>
+            <Edit style={{ fontSize: "6rem" }} />
+          </div>
           <FeatureBody>
             Every business is covered from small businesses to large enterprise
             companies, no more worrying about time and money when you want to
@@ -59,11 +65,9 @@ const FeaturesSection: React.FunctionComponent = () => {
         </FeatureItem>
         <FeatureItem>
           <FeatureHeader>More Than You Ever Imagined</FeatureHeader>
-          <IconContext.Provider
-            value={{ style: { color: "#4caf50", fontSize: "50px" } }}
-          >
-            <IoIosMore />
-          </IconContext.Provider>
+          <div className={classes.checkIcon}>
+            <More style={{ fontSize: "6rem" }} />
+          </div>
           <FeatureBody>
             From selling virtual products, physical products, exchange
             marketplace, coupons and all you have been wishing for is finally
@@ -75,4 +79,4 @@ const FeaturesSection: React.FunctionComponent = () => {
   );
 };
 
-export default FeaturesSection;
+export default withStyles(styles)(FeaturesSection);
