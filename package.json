@@ -7,7 +7,21 @@
     "start": "next start",
     "export": "next export",
     "postexport": "node scripts/postExport.js",
+    "dockerize": "npm run build:docker && npm run tag:docker && npm run push:docker && npm run tag-latest:docker && npm run push-latest:docker",
+    "deploy": "eb use landing-page-production && eb deploy --label v$npm_package_version --verbose",
+    "build:docker": "docker build -t $npm_package_config_docker_image:$npm_package_version -t $npm_package_config_docker_image:latest .",
+    "tag:docker": "docker tag $npm_package_config_docker_image $npm_package_config_docker_repo/$npm_package_config_docker_image:$npm_package_version",
+    "tag-latest:docker": "docker tag $npm_package_config_docker_image $npm_package_config_docker_repo/$npm_package_config_docker_image:latest",
+    "push:docker": "docker push $npm_package_config_docker_repo/$npm_package_config_docker_image:$npm_package_version",
+    "push-latest:docker": "docker push $npm_package_config_docker_repo/$npm_package_config_docker_image:latest",
+    "login:docker": "eval $(aws ecr get-login --no-include-email --region us-east-1)",
     "type-check": "tsc"
+  },
+  "config": {
+    "docker": {
+      "repo": "414706045613.dkr.ecr.us-east-1.amazonaws.com",
+      "image": "agroraexpo-launchpage"
+    }
   },
   "dependencies": {
     "@material-ui/core": "^3.9.3",
