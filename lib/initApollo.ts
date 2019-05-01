@@ -22,7 +22,7 @@ function create(initialState, { getToken }) {
     return {
       headers: {
         ...headers,
-        "X-Api-Key": "da2-anl2ph7wuvbtxemzuvzobc7kmq"
+        "X-Api-Key": "da2-vpamgl3ncze5bn44oumjt2hhrm"
       }
     };
   });
