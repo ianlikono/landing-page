@@ -12,8 +12,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return initApollo; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
 /* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-boost */ "./node_modules/apollo-boost/lib/bundle.esm.js");
-/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-link-http */ "./node_modules/apollo-link-http/lib/bundle.esm.js");
-/* harmony import */ var apollo_link_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-link-context */ "./node_modules/apollo-link-context/lib/bundle.esm.js");
+/* harmony import */ var apollo_link_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-link-context */ "./node_modules/apollo-link-context/lib/bundle.esm.js");
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-link-http */ "./node_modules/apollo-link-http/lib/bundle.esm.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
 
@@ -27,16 +27,16 @@ if (false) {}
 
 function create(initialState, _ref) {
   var getToken = _ref.getToken;
-  var httpLink = Object(apollo_link_http__WEBPACK_IMPORTED_MODULE_2__["createHttpLink"])({
+  var httpLink = Object(apollo_link_http__WEBPACK_IMPORTED_MODULE_3__["createHttpLink"])({
     uri: "https://inkmlouqlzg5vi6wf5i2djonii.appsync-api.us-east-1.amazonaws.com/graphql",
     credentials: "same-origin"
   });
-  var authLink = Object(apollo_link_context__WEBPACK_IMPORTED_MODULE_3__["setContext"])(function (_, _ref2) {
+  var authLink = Object(apollo_link_context__WEBPACK_IMPORTED_MODULE_2__["setContext"])(function (_, _ref2) {
     var headers = _ref2.headers;
     var token = getToken();
     return {
       headers: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, headers, {
-        "X-Api-Key": "da2-anl2ph7wuvbtxemzuvzobc7kmq"
+        "X-Api-Key": "da2-vpamgl3ncze5bn44oumjt2hhrm"
       })
     };
   }); // Check out https://github.com/zeit/next.js/pull/4611 if you want to use the AWSAppSyncClient
@@ -105,7 +105,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/likono/likono/landing-page/lib/withApollo.tsx";
 
 
 
@@ -177,12 +176,7 @@ function parseCookies(req) {
                   return Object(react_apollo__WEBPACK_IMPORTED_MODULE_13__["getDataFromTree"])(react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, appProps, {
                     Component: Component,
                     router: router,
-                    apolloClient: apollo,
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 55
-                    },
-                    __self: this
+                    apolloClient: apollo
                   })));
 
                 case 14:
@@ -214,7 +208,7 @@ function parseCookies(req) {
                   return _context.stop();
               }
             }
-          }, _callee, this, [[11, 16]]);
+          }, _callee, null, [[11, 16]]);
         }));
 
         function getInitialProps(_x) {
@@ -245,12 +239,7 @@ function parseCookies(req) {
       key: "render",
       value: function render() {
         return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, this.props, {
-          apolloClient: this.apolloClient,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 95
-          },
-          __self: this
+          apolloClient: this.apolloClient
         }));
       }
     }]);
@@ -42300,7 +42289,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/likono/likono/landing-page/pages/_app.tsx";
 
 
 
@@ -42344,68 +42332,17 @@ function (_App) {
           Component = _this$props.Component,
           pageProps = _this$props.pageProps,
           apolloClient = _this$props.apolloClient;
-      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_8__["Container"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_12__["ApolloProvider"], {
-        client: apolloClient,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_9___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("title", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }, "My page")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_11___default.a, {
+      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_8__["Container"], null, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_12__["ApolloProvider"], {
+        client: apolloClient
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_9___default.a, null, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("title", null, "My page")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_11___default.a, {
         registry: this.pageContext.sheetsRegistry,
-        generateClassName: this.pageContext.generateClassName,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 35
-        },
-        __self: this
+        generateClassName: this.pageContext.generateClassName
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__["MuiThemeProvider"], {
         theme: this.pageContext.theme,
-        sheetsManager: this.pageContext.sheetsManager,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_shared_Page__WEBPACK_IMPORTED_MODULE_14__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        sheetsManager: this.pageContext.sheetsManager
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_6___default.a, null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_shared_Page__WEBPACK_IMPORTED_MODULE_14__["default"], null, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         pageContext: this.pageContext
-      }, pageProps, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
-      })))))));
+      }, pageProps)))))));
     }
   }]);
 
@@ -42429,47 +42366,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/likono/likono/landing-page/shared/Meta.tsx";
 
 
 
 var Meta = function Meta() {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_0___default.a, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
-    content: "width=device-width, initial-scale=1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
+    content: "width=device-width, initial-scale=1"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
-    charSet: "utf-8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
+    charSet: "utf-8"
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "shortcut icon",
-    href: "/static/favicon.ico",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "agoraexpo")));
+    href: "/static/favicon.ico"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", null, "agoraexpo")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Meta);
@@ -42491,7 +42400,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Meta */ "./shared/Meta.tsx");
 
-var _jsxFileName = "/Users/likono/likono/landing-page/shared/Page.tsx";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  html {\n    font-size: 62.5%;\n  }\n"]);
@@ -42527,37 +42435,8 @@ var theme = {
 var Page = function Page(props) {
   var children = props.children;
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_components__WEBPACK_IMPORTED_MODULE_2__["ThemeProvider"], {
-    theme: theme,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, children), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  })));
+    theme: theme
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, children), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GlobalStyle, null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Page);

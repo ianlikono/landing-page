@@ -1,8 +1,14 @@
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
 import Document, { Head, Main, NextScript } from "next/document";
+import postcss from 'postcss';
 import PropTypes from "prop-types";
 import React from "react";
 import { ServerStyleSheet } from "styled-components";
 import flush from "styled-jsx/server";
+
+const prefixer = postcss([autoprefixer]);
+const minifier = postcss([cssnano]);
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -23,6 +29,12 @@ class MyDocument extends Document {
     let css;
     if (pageContext) {
       css = pageContext.sheetsRegistry.toString();
+      if (process.env.NODE_ENV === 'production') {
+        const result1 = await prefixer.process(css);
+        css = result1.css;
+        const result2 = await minifier.process(css);
+        css = result2.css;
+      }
     }
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -73,6 +85,26 @@ class MyDocument extends Document {
               pageContext ? pageContext.theme.palette.primary.main : null
             }
           />
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@agoraexpo" />
+          <meta name="twitter:title" content="AgoraExpo" />
+          <meta
+            name="twitter:description"
+            content="get the power of all the big players in your online business. Start for free with no initial investment required😀.."
+          />
+          <meta name="twitter:image" content="https://res.cloudinary.com/doelo01na/image/upload/v1556859500/static/logos/agoraexpobanner.png" />
+          {/* Facebook */}
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="AgoraExpo" />
+          <meta
+            property="og:description"
+            content="get the power of all the big players in your online business. Start for free with no initial investment required😀.."
+          />
+          <meta property="og:image" content="https://res.cloudinary.com/doelo01na/image/upload/v1556859500/static/logos/agoraexpobanner.png" />
+          <meta property="og:locale" content="en_US" />
+          <link rel="shortcut icon" href="/static/favicon.ico" />
+          <link rel="canonical" href="https://agoraexpo.com" />
           <link
             href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
             rel="stylesheet"
