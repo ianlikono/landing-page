@@ -2306,36 +2306,51 @@ function (_Document) {
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
         name: "theme-color",
         content: pageContext ? pageContext.theme.palette.primary.main : null
+      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("title", null, "Home || AgoraExpo"), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("link", {
+        rel: "canonical",
+        href: "https://agoraexpo.com"
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
-        name: "twitter:card",
-        content: "summary"
+        name: "description",
+        content: "Build your own online business stress free with no initial investment required"
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
-        name: "twitter:site",
-        content: "@agoraexpo"
+        itemProp: "name",
+        content: "Build your own online business stress free with no initial investment required"
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
-        name: "twitter:title",
-        content: "AgoraExpo"
+        itemProp: "description",
+        content: "iGet the power of all the big players in your online business. Start for free with no initial investment required\uD83D\uDE00."
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
-        name: "twitter:description",
-        content: "get the power of all the big players in your online business. Start for free with no initial investment required\uD83D\uDE00.."
-      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
-        name: "twitter:image",
+        itemProp: "image",
         content: "https://res.cloudinary.com/doelo01na/image/upload/v1556859500/static/logos/agoraexpobanner.png"
-      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
-        property: "og:type",
-        content: "website"
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
         property: "og:title",
-        content: "AgoraExpo"
+        content: "Build your own online business stress free with no initial investment required"
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
         property: "og:description",
-        content: "get the power of all the big players in your online business. Start for free with no initial investment required\uD83D\uDE00.."
+        content: "Get the power of all the big players in your online business. Start for free with no initial investment required\uD83D\uDE00."
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
         property: "og:image",
-        content: "https://res.cloudinary.com/doelo01na/image/upload/v1556859500/static/logos/agoraexpobanner.png"
+        content: "https://res.cloudinary.com/doelo01na/image/upload/c_scale,h_630,q_auto/v1556859500/static/logos/agoraexpobanner.png"
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
-        property: "og:locale",
-        content: "en_US"
+        property: "og:url",
+        content: "https://agoraexpo.com"
+      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
+        property: "og:site_name",
+        content: "AgoraExpo"
+      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
+        name: "twitter:title",
+        content: "Build your own online business stress free with no initial investment required"
+      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
+        name: "twitter:description",
+        content: "Get the power of all the big players in your online business. Start for free with no initial investment required\uD83D\uDE00."
+      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
+        name: "twitter:image",
+        content: "https://res.cloudinary.com/doelo01na/image/upload/c_scale,h_630,q_auto/v1556859500/static/logos/agoraexpobanner.png"
+      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
+        name: "twitter:card",
+        content: "summary_large_image"
+      }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("meta", {
+        name: "twitter:image:alt",
+        content: "AgoraExpo"
       }), react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("link", {
         rel: "shortcut icon",
         href: "/static/favicon.ico"

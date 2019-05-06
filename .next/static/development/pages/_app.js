@@ -42378,7 +42378,7 @@ var Meta = function Meta() {
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "shortcut icon",
     href: "/static/favicon.ico"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", null, "agoraexpo")));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Meta);
