@@ -2,9 +2,9 @@
   "name": "with-typescript",
   "version": "1.0.0",
   "scripts": {
-    "dev": "node app.js",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node app.js",
+    "start": "node server.js",
     "export": "next export",
     "postexport": "node scripts/postExport.js",
     "dockerize": "npm run build:docker && npm run tag:docker && npm run push:docker && npm run tag-latest:docker && npm run push-latest:docker",
